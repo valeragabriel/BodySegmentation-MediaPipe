@@ -52,5 +52,9 @@ if __name__ == "__main__":
     # Process the segmented image
     segmented_image = process_segmented_image(image_path)
 
+    # Save the segmented image
+    output_path = 'segmented_image.png'
+    cv2.imwrite(output_path, segmented_image)
+
     # Display the segmented image
     resize_and_show(segmented_image)
